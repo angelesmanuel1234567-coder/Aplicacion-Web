@@ -1,0 +1,81 @@
+.hero {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-image 0.8s ease-in-out;
+}
+
+/* capa oscura para mejor contraste */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.4)
+  );
+}
+
+/* contenido encima */
+.overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  max-width: 700px;
+}
+
+/* título principal */
+.overlay h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  animation: fadeIn 1s ease;
+}
+
+/* subtítulo */
+.overlay p {
+  font-size: 20px;
+  opacity: 0.9;
+  animation: fadeIn 1.5s ease;
+}
+
+/* botón moderno */
+.hero-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #0097a7;
+  transform: scale(1.05);
+}
+
+/* animación */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
