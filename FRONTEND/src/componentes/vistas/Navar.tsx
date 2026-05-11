@@ -1,11 +1,11 @@
-import "./navbar.css";
+import "../css/navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       
       <div className="logo-container">
-        <img src="../../public/img/logo.png" alt="Logo" className="logo-img" />
+        <img src="/img/logo.png" alt="Logo" className="logo-img" />
         <h2 className="logo-text">Mecánica Fabian</h2>
       </div>
 
@@ -21,4 +21,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

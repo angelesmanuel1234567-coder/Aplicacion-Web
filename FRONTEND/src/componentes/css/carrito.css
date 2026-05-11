@@ -1,0 +1,43 @@
+.carrito {
+  position: fixed;
+  right: 0;
+  top: 70px;
+  width: 280px;
+  height: 100%;
+  background: white;
+  padding: 15px;
+  box-shadow: -5px 0 10px rgba(0,0,0,0.1);
+  overflow-y: auto;
+}
+.btn-carrito {
+  margin-top: 8px;
+  padding: 10px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-carrito:hover {
+  background: #e68900;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+}

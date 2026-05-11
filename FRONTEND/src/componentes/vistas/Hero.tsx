@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./hero.css";
+import "../css/hero.css";
 
 const images = [
   "/img/imagen1.png",
