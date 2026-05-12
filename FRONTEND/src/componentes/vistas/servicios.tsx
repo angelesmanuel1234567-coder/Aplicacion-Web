@@ -52,7 +52,7 @@ const Servicios = () => {
 
             <button
               onClick={() => {
-                const numero = "51928318714";
+                const numero = "51996468943";
                 const texto = `Hola, quiero consultar sobre: ${servicioActivo.titulo}`;
                 window.open(`https://wa.me/${numero}?text=${encodeURIComponent(texto)}`);
               }}
