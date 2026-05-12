@@ -4,7 +4,10 @@ import conexion from "./model/conexion";
 
 const app = express();
 
-app.use(cors());
+app.use(cors({ 
+  origin: "https://aplicacion-web-three.vercel.app"
+
+}));
 app.use(express.json());
 app.get("/", (req, res) => {
   res.json({
