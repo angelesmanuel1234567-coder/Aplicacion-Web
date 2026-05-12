@@ -6,6 +6,11 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.get("/", (req, res) => {
+  res.json({
+    message: "API funcionando 🚀"
+  });
+});
 
 app.get("/usuarios", (req, res) => {
   conexion.query("SELECT * FROM usuario", (err, results) => {
