@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useCarrito } from "../contex/CarritoContext";
 import '../css/carrito.css'
 
 
@@ -10,7 +9,7 @@ import '../css/carrito.css'
 const Productos = () => {
   const [productoActivo, setProductoActivo] = useState<any>(null);
 
-  const { agregar } = useCarrito();
+ 
 
   const productos = [
     {
@@ -82,11 +81,7 @@ const Productos = () => {
   className="btn-carrito"
   onClick={(e) => {
     e.stopPropagation();
-    agregar({
-      id: i,
-      nombre: p.nombre,
-      precio: parseInt(p.precio.replace("S/ ", ""))
-    });
+   
   }}
 >
   Agregar al carrito

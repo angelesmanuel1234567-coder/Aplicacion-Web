@@ -3,7 +3,7 @@ import Footer from '../vistas/footer'
 import Contacto from '../vistas/contacto';
 import Servicios from '../vistas/servicios'
 import Productos from '../vistas/productos';
-import Carrito from '../vistas/carrito';
+import Validar from './login';
 import '../css/App.css'
 
 function App() {
@@ -11,9 +11,9 @@ function App() {
     <div className="app">
       
       <Navbar />
-
+             
       <main className="content">
-        
+        <Validar/>
         <section id="inicio">
           <h1>Bienvenido a Nuestro Panel</h1>
           <Contacto /> 
@@ -23,7 +23,7 @@ function App() {
 
          <main className="content">
   <Productos />
-  <Carrito /> {/* 👈 aquí */}
+
 </main>
 
         <section id="contacto">
