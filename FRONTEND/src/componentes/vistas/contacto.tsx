@@ -12,7 +12,7 @@ const Contacto = () => {
       return;
     }
 
-    const numero = "51928318714"; // 👉 tu número real
+    const numero = "51996468943"; // 👉 tu número real
     const texto = `Hola, soy ${nombre}. ${mensaje}`;
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 
